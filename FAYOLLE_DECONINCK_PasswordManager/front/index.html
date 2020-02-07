@@ -1,0 +1,75 @@
+<html>
+    <head>  
+
+        <title>Ajout</title>
+        <meta charset="UTF-8"\>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/javascript" src="scriptt.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+        <script src="md5.min.js"></script>
+
+    </head>
+
+    <body>authentificationUtilisateur
+
+        <form class="col-lg-6">
+
+            <h4><a href="inscription.html">Pas encore inscrit ?</a></h4>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Identifiant passwordManager</label>
+              <input type="text" class="form-control" id="identifiantPM" aria-describedby="emailHelp" placeholder="Identifiant">
+              </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mot de passe passwordManager</label>
+              <input type="password" class="form-control" id="mdpPM" placeholder="Mot de passe">
+            </div>
+
+          </form>
+
+          <table class="col-lg-12">
+
+            <tr>
+              <th>Affiche mdp</th>
+              <th>Ajout site </th>
+            </tr>
+
+            <td class="col-lg-6">
+              <div class="form-group">
+                <label for="inputSite">Site Name</label>
+                <input type="text" class="form-control" id="siteName"  placeholder="Nom du site">
+              </div>
+
+              <div id="response"></div>
+
+              <button type="submit" class="btn btn-primary " onclick="AfficheMdp();">Afficher mot de passe</button>
+
+            </td>
+
+            <td class="col-lg-6"> 
+
+              <div class="form-group">
+                <label for="inputSite">Identifiant Site </label>
+                <input type="text" class="form-control" id="idSite"  placeholder="Identifiant">
+              </div>
+
+              <div class="form-group">
+                <label for="inputSite">Mot de passe site</label>
+                <input type="text" class="form-control" id="mdpSite"  placeholder="Mot de passe">
+              </div>
+
+              <div class="form-group">
+                <label for="inputSite">Lien du site</label>
+                <input type="text" class="form-control" id="linkSite"  placeholder="Lien du site">
+              </div>
+
+              <button type="submit" class="btn btn-primary " onclick="AjoutSite();">Ajouter un site</button>
+
+            </td>
+
+          </table>
+
+    </body>
+
+</html>
